@@ -19,10 +19,14 @@ class CreateMessagesTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('text');
             $table->boolean('is_read');
+            // $table->boolean('is_media');
+            // $table->unsignedInteger('media_id');
+            $table->boolean('soft_delete');
             $table->timestamps();
 
             $table->foreign('conversation_id')->references('id')->on('conversations')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            // $table->foreign('media_id')->references('id')->on('media_uploads')->onDelete('cascade');
         });
     }
 
