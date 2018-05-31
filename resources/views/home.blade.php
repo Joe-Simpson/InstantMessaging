@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    <a href="{{ url('/conversation') }}">Messaging</a>
+                    <a href="{{ url('/conversations') }}">Conversations</a><br>
+                    <a href="{{ url('/messages') }}">Messages</a>
                 </div>
             </div>
         </div>

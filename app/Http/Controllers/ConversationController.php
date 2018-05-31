@@ -16,6 +16,6 @@ class ConversationController extends Controller
      */
     public function index()
     {
-        return view('conversation');
+        return view('conversations');
     }
 }

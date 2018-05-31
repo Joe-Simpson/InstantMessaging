@@ -19,4 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/conversation', 'ConversationController@index')->name('conversation');
+Route::get('/conversations', 'ConversationController@index')->name('conversations');
+
+Route::get('/messages', 'MessageController@index')->name('messages');
