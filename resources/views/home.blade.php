@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <a href="{{ url('/conversation') }}">Messaging</a>
                 </div>
             </div>
         </div>

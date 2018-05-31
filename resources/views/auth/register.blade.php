@@ -40,14 +40,14 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="is_client" class="col-md-4 col-form-label text-md-right">{{ __('Is Client') }}</label>
+                            <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
 
                             <div class="col-md-6">
-                                <input id="is_client" type="checkbox" class="form-control{{ $errors->has('is_client') ? ' is-invalid' : '' }}" name="is_client" value="1" checked>
+                                <input id="role" type="text" class="form-control{{ $errors->has('role') ? ' is-invalid' : '' }}" name="role" value="{{ old('role') }}" required>
 
-                                @if ($errors->has('is_client'))
+                                @if ($errors->has('role'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('is_client') }}</strong>
+                                        <strong>{{ $errors->first('role') }}</strong>
                                     </span>
                                 @endif
                             </div>

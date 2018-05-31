@@ -14,7 +14,7 @@ class AddIsClientFieldToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('is_client')->default(1);
+            $table->string('role');
         });
     }
 
@@ -26,7 +26,7 @@ class AddIsClientFieldToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropIfExists('is_client');
+            $table->dropColumn('role');
         });
     }
 }
