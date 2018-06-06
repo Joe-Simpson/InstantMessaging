@@ -15,7 +15,8 @@
                     @endif
 
                     <a href="{{ url('/conversations') }}">Conversations</a><br>
-                    <a href="{{ url('/messages') }}">Messages</a>
+                    <a href="{{ url('/messages') }}">Messages</a><br>
+                    <a href="{{ url('/users') }}">Users</a>
                 </div>
             </div>
         </div>

@@ -10,8 +10,9 @@
                 <div class="card-body">
                     <div class="row justify-content-start">
                         <ul>
-                            <li>user2</li>
-                            <li>user3</li>
+                            @foreach( $conversations as $conversation )
+                                <li>{{ $conversations->user1 }} to {{ $conversations->user2 }}</li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

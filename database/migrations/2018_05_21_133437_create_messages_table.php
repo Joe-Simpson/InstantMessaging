@@ -17,7 +17,7 @@ class CreateMessagesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('conversation_id');
             $table->unsignedInteger('user_id');
-            $table->string('text');
+            $table->text('body');
             $table->boolean('is_read');
             // $table->boolean('is_media');
             // $table->unsignedInteger('media_id');

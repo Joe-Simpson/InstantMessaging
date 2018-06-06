@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Conversation;
 use Illuminate\Http\Request;
+use DB;
 
 class ConversationController extends Controller
 {
@@ -16,6 +17,7 @@ class ConversationController extends Controller
      */
     public function index()
     {
-        return view('conversations');
+    	$conversations = DB::table('conversations')->get();
+        return view('conversations', compact('conversations'));
     }
 }

@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/conversations', 'ConversationController@index')->name('conversations');
 
 Route::get('/messages', 'MessageController@index')->name('messages');
+
+Route::get('/users', 'UserController@index')->name('users');
